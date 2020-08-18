@@ -1,0 +1,19 @@
+body {
+    width: max-content;
+    margin: 0 auto;
+    background-color: gold;
+    color: green;
+}
+
+ol {
+    margin: 0 auto;
+    border: 1px solid red;
+}
+
+li {
+    width: max-content;
+}
+
+button {
+    border: 1px solid yellow;
+}
