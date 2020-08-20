@@ -8,10 +8,18 @@
     <title>Document</title>
 </head>
 <body>
-    <button onclick="fetchTodos()">Fetch Todos</button>
-    <button onclick="logTodos()">Log Todos</button>
-    <button onclick="populateTodos()">Populate Todos</button>
-    <button onclick="topTwenty()">Top Twenty</button>
+    <div class="main-container">
+        <section class="buttons">
+            <button onclick="fetchTodos()">Fetch Todos</button>
+            <button onclick="logTodos()">Log Todos</button>
+            <button onclick="populateTodos()">Populate Todos</button>
+            <button onclick="removeTodos()">Remove Todos</button>
+              <div class="user-todos"></div>
+                <button onclick="populateUserSelction()">Populate User Todo</button>
+                <input type="number" min="1" max="10" name="userId" id="">
+            </div>
+        </section>
+    </div>
     <div>
     <ol id="todo-list">
    <!-- LIs will go here -->

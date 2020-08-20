@@ -30,10 +30,8 @@ const populateTodos = () => {
   
     // loop through array to populate dom with each items title
     for (let i = 0; i < arrayOfTodos.length; i++) {
-      let complete = arrayOfTodos[i].completed
-      console.log('complete', arrayOfTodos[i], complete)
-      // created listItem
-      var listItem = document.createElement("li"); 
+    
+      let listItem = document.createElement("li"); 
       // get array item title
       const elementTitle = arrayOfTodos[i].title
       // created text to go inside <li> text </li>
@@ -45,35 +43,19 @@ const populateTodos = () => {
       // append to <ol> <li> Hi there and greetings! </li> </ol>
       ol.appendChild(listItem)
     }
-    //  if (complete.every(true)) {
-    //   console.log("Austin, TX")
-      // document.querySelector("li").style.color = "blue";
-      // } else if (completed.every(false))
-      // document.querySelector("li").style.color = "red";
-      // if (complete == false) {
-      // document.querySelector("li").style.color = "red";
-      }
-
-const topTwenty = () => {
-  var ol = document.getElementById('todo-list')
-  
-  // loop through array to populate dom with each items title
-  for (let i = 0; i < arrayOfTodos.slice(19); i++) {
-    let complete = arrayOfTodos[i].completed
-    console.log('complete', arrayOfTodos[i], complete)
-    // created listItem
-    var listItem = document.createElement("li"); 
-    // get array item title
-    const elementTitle = arrayOfTodos[i].title
-    // created text to go inside <li> text </li>
-    var listItemText = document.createTextNode(elementTitle); 
-
-    // appended the text to the listItem
-    listItem.appendChild(listItemText);
-
-    // append to <ol> <li> Hi there and greetings! </li> </ol>
-    ol.appendChild(listItem)
   }
+  
+const populateUserSelction = () => {
+  const inputElement = document.getElementsByTagName('userId')
+  let inputValue = inputElement.inputValue
 
-      console.log(arrayOfTodos.slice(0, 19)) 
+  // clear array
+  // filter out the userid of the number in the input 
+  todoByUserId = arrayOfTodos.filter(todo => {
+    console.log('todo:', todo.userId)
+  })
+}
+
+const removeTodos = () => {
+  document.getElementById("todo-list").innerHTML = "";
 }
