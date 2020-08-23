@@ -1,5 +1,6 @@
 body {
-    width: max-content;
+    width: 100vw;
+    height: 100%;
     margin: 0 auto;
     background-color: gold;
     color: green;
@@ -7,13 +8,66 @@ body {
 
 ol {
     margin: 0 auto;
-    border: 1px solid red;
 }
 
 li {
     width: max-content;
+    color: black;
 }
 
 button {
-    border: 1px solid yellow;
+    width: max-content;
+    justify-content: space-evenly;
+}
+
+input {
+    width: 100px;
+}
+
+.main-container {
+    height: 100px;
+    width: 100vw;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+section {
+    padding: 10px
+}
+
+section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+section button {
+    margin-bottom: 8px;
+}
+
+main {
+    flex: 2;
+}
+
+section .user-todos {
+    display: flex;
+    flex-direction: row;
+    justify-content: ;
+}
+
+.columns, .headers {
+    display: flex;
+    flex-direction: row;
+}
+
+.headers {
+    justify-content: space-evenly;
+}
+
+#todo-list, #complete-list, #listOne, #listTwo{
+    width: 50vw;
 }
