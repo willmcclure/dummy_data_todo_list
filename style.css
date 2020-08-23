@@ -1,5 +1,6 @@
 body {
-    width: max-content;
+    width: 100vw;
+    height: 100%;
     margin: 0 auto;
     background-color: gold;
     color: green;
@@ -7,7 +8,6 @@ body {
 
 ol {
     margin: 0 auto;
-    border: 1px solid red;
 }
 
 li {
@@ -16,8 +16,8 @@ li {
 }
 
 button {
-    border: 1px solid pink;
     width: max-content;
+    justify-content: space-evenly;
 }
 
 input {
@@ -25,16 +25,18 @@ input {
 }
 
 .main-container {
-    border: 1px solid red;
-    height: 200px;
+    height: 100px;
     width: 100vw;
-    display: flex;
-    flex-direction: row;
 }
 
-section, main {
-    border: 1px solid blue;
-    padding: 20px;
+.buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+section {
+    padding: 10px
 }
 
 section {
@@ -55,4 +57,17 @@ section .user-todos {
     display: flex;
     flex-direction: row;
     justify-content: ;
+}
+
+.columns, .headers {
+    display: flex;
+    flex-direction: row;
+}
+
+.headers {
+    justify-content: space-evenly;
+}
+
+#todo-list, #complete-list, #listOne, #listTwo{
+    width: 50vw;
 }
